@@ -1,0 +1,10 @@
+elasticsearch:
+  host: "localhost"
+  port: 9200
+  user: "your_username"
+  password: "your_password"
+index: "faker-logs"
+log_generation:
+  interval_min: 0.5
+  interval_max: 2.0
+  num_logs: 1000  # Set to -1 for infinite log generation
