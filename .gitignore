@@ -1,0 +1,11 @@
+# Ignore typical Mac Stuff
+.DS_Store
+
+# Windows Stuff
+Thumbs.db
+
+# Linux Stuff
+*~
+
+# Python
+*.pyc
