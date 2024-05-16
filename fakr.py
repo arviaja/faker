@@ -11,8 +11,12 @@ with open("config.yaml", "r") as file:
 
 # Initialize Elasticsearch client with authentication
 es = Elasticsearch(
-    [{'host': config['elasticsearch']['host'], 'port': config['elasticsearch']['port']}],
-    http_auth=(config['elasticsearch']['user'], config['elasticsearch']['password'])
+    [{
+        'host': config['elasticsearch']['host'],
+        'port': config['elasticsearch']['port'],
+        'scheme': config['elasticsearch']['scheme']
+    }],
+    basic_auth=(config['elasticsearch']['user'], config['elasticsearch']['password'])
 )
 
 # Initialize Faker for generating random data

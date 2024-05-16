@@ -9,3 +9,6 @@ Thumbs.db
 
 # Python
 *.pyc
+
+# config.yaml
+config.yaml
