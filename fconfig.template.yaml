@@ -1,3 +1,5 @@
+# Rename this file to fconfig.yaml and fill in the values
+
 elasticsearch:
   host: "hostname"
   port: 9200

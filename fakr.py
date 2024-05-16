@@ -5,8 +5,8 @@ from datetime import datetime
 from elasticsearch import Elasticsearch
 from faker import Faker
 
-# Load configuration from config.yaml
-with open("config.yaml", "r") as file:
+# Load configuration from fconfig.yaml
+with open("fconfig.yaml", "r") as file:
     config = yaml.safe_load(file)
 
 # Initialize Elasticsearch client with authentication
